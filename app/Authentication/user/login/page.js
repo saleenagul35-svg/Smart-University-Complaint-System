@@ -76,7 +76,7 @@ export default function LoginPage() {
         />
         <div className="relative z-10 flex flex-col justify-between p-12 w-full">
           <div className="flex items-center gap-3">
-            <div className="h-10 w-10 rounded-md bg-[#2563EB] flex items-center justify-center">
+            <div className="h-10 w-10 rounded-md bg-[#3B5F6D] flex items-center justify-center">
               <ShieldCheck className="h-5 w-5 text-white" strokeWidth={2.5} />
             </div>
             <span className="text-white font-semibold tracking-tight text-lg">
@@ -85,7 +85,7 @@ export default function LoginPage() {
           </div>
 
           <div>
-            <div className="h-px w-12 bg-[#2563EB] mb-6" />
+            <div className="h-px w-12 bg-[#3B5F6D] mb-6" />
             <h1 className="text-white text-[2.75rem] leading-[1.1] font-semibold tracking-tight mb-4">
               Control center for
               <br />
@@ -111,7 +111,7 @@ export default function LoginPage() {
         <div className="w-full max-w-[380px]">
           {/* Mobile brand mark */}
           <div className="flex lg:hidden items-center gap-2.5 mb-10">
-            <div className="h-9 w-9 rounded-md bg-[#2563EB] flex items-center justify-center">
+            <div className="h-9 w-9 rounded-md bg-[#3B5F6D] flex items-center justify-center">
               <ShieldCheck className="h-4.5 w-4.5 text-white" strokeWidth={2.5} />
             </div>
             <span className="text-[#0F172A] font-semibold tracking-tight">
@@ -142,7 +142,7 @@ export default function LoginPage() {
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 placeholder="you@dynamicsecurity.co.uk"
-                className="w-full h-11 rounded-md border border-slate-200 bg-white px-3.5 text-sm text-[#0F172A] placeholder:text-slate-400 outline-none transition-colors focus:border-[#2563EB] focus:ring-2 focus:ring-[#2563EB]/15"
+                className="w-full h-11 rounded-md border border-slate-200 bg-white px-3.5 text-sm text-[#0F172A] placeholder:text-slate-400 outline-none transition-colors focus:border-[#3B5F6D] focus:ring-2 focus:ring-[#3B5F6D]/15"
               />
             </div>
 
@@ -153,7 +153,7 @@ export default function LoginPage() {
                 </label>
                 <a
                   href="#"
-                  className="text-[13px] text-[#2563EB] hover:text-[#1d4ed8] font-medium"
+                  className="text-[13px] text-[#3B5F6D] hover:text-[#223a43] font-medium"
                 >
                   Forgot password?
                 </a>
@@ -166,7 +166,7 @@ export default function LoginPage() {
                     setForm({ ...form, password: e.target.value })
                   }
                   placeholder="••••••••"
-                  className="w-full h-11 rounded-md border border-slate-200 bg-white px-3.5 pr-10 text-sm text-[#0F172A] placeholder:text-slate-400 outline-none transition-colors focus:border-[#2563EB] focus:ring-2 focus:ring-[#2563EB]/15"
+                  className="w-full h-11 rounded-md border border-slate-200 bg-white px-3.5 pr-10 text-sm text-[#0F172A] placeholder:text-slate-400 outline-none transition-colors focus:border-[#3B5F6D] focus:ring-2 focus:ring-[#3B5F6D]/15"
                 />
                 <button
                   type="button"
@@ -183,20 +183,10 @@ export default function LoginPage() {
               </div>
             </div>
 
-            <label className="flex items-center gap-2 pt-1 cursor-pointer select-none">
-              <input
-                type="checkbox"
-                className="h-4 w-4 rounded border-slate-300 text-[#2563EB] focus:ring-[#2563EB]/30"
-              />
-              <span className="text-[13px] text-slate-600">
-                Keep me signed in
-              </span>
-            </label>
-
             <button
               type="submit"
               disabled={loading}
-              className="w-full h-11 rounded-md bg-[#2563EB] text-white text-sm font-medium tracking-tight hover:bg-[#1d4ed8] active:bg-[#1e40af] transition-colors disabled:opacity-70 flex items-center justify-center gap-2 mt-2"
+              className="w-full h-11 rounded-md bg-[#3B5F6D] text-white text-sm font-medium tracking-tight hover:bg-[#2e4a54] active:bg-[#2e4a54] transition-colors disabled:opacity-70 flex items-center justify-center gap-2 mt-2"
             >
               {loading ? (
                 <>
@@ -215,7 +205,7 @@ export default function LoginPage() {
         </div>
       </div>
       {/* {alert && <Stack spacing={2} className="fixed top-5 right-16 w-100 ">
-        <Alert sx={{ backgroundColor: "#2563EB", color:"white" }} severity="error">{alert}</Alert>
+        <Alert sx={{ backgroundColor: "#3B5F6D", color:"white" }} severity="error">{alert}</Alert>
       </Stack>} */}
     </div>
   );
